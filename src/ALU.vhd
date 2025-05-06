@@ -74,7 +74,7 @@ port map(
     A => i_A(7 downto 4),
     B => w_B_ALU(7 downto 4),
     Cin => w_lower_carry,
-    S => w_sum(7 downto 3),
+    S => w_sum(7 downto 4),
     Cout => w_upper_carry
 );
 
