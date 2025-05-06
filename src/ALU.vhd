@@ -81,7 +81,7 @@ port map(
 resultOut <= w_sum when i_OP = "000" else
              w_sum when i_OP = "001" else
              i_A and i_B when i_OP = "010" else
-             i_A and i_B when i_OP = "011" else
+             i_A or i_B when i_OP = "011" else
              w_sum;
              
 o_result <= resultOut;
